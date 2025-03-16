@@ -5,36 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stolen Moments: When London Tourist Safety Meets Urban Crime Statistics</title>
     <style>
+        /* Color Palette Demonstration */
+        :root {
+            --dark-purple: #5D4777;     /* Main heading color */
+            --medium-purple: #7E6C88;   /* Secondary heading color */
+            --light-purple: #9B8AA4;    /* Tertiary heading color */
+            --dark-grey: #4A4A4A;       /* Body text color */
+            --medium-grey: #777777;     /* Secondary text color */
+            --light-grey: #F5F5F5;      /* Background color */
+            --accent-grey: #E0E0E0;     /* Border color */
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--dark-grey);
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #FCFCFC;
         }
         
+        /* Color demonstration for main title */
         h1 {
-            color: #2c3e50;
+            color: var(--dark-purple);  /* #5D4777 - Deep Purple */
             text-align: center;
             margin-bottom: 30px;
             font-size: 2.5rem;
+            border-bottom: 3px solid var(--accent-grey);
+            padding-bottom: 15px;
         }
         
+        /* Color demonstration for section titles */
         h2 {
-            color: #3498db;
+            color: var(--medium-purple);  /* #7E6C88 - Medium Purple */
             margin-top: 30px;
-            border-bottom: 2px solid #ecf0f1;
+            border-bottom: 2px solid var(--accent-grey);
             padding-bottom: 10px;
         }
         
+        /* Color demonstration for subsection titles */
         h3 {
-            color: #2980b9;
+            color: var(--light-purple);  /* #9B8AA4 - Light Purple */
+            margin-top: 20px;
         }
         
         .section {
             margin-bottom: 40px;
-            background-color: #f9f9f9;
+            background-color: var(--light-grey);
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -51,18 +69,19 @@
         
         .note {
             font-style: italic;
-            color: #7f8c8d;
+            color: var(--medium-grey);
             margin-top: 30px;
             text-align: center;
         }
         
         a {
-            color: #3498db;
+            color: var(--medium-purple);
             text-decoration: none;
         }
         
         a:hover {
             text-decoration: underline;
+            color: var(--dark-purple);
         }
         
         ul {
@@ -73,8 +92,9 @@
             display: none;
         }
         
+        /* Color demonstration for buttons */
         .show-more-btn {
-            background-color: #3498db;
+            background-color: var(--medium-purple);
             color: white;
             border: none;
             padding: 10px 15px;
@@ -82,10 +102,48 @@
             cursor: pointer;
             margin: 20px 0;
             font-weight: bold;
+            transition: background-color 0.3s;
         }
         
         .show-more-btn:hover {
-            background-color: #2980b9;
+            background-color: var(--dark-purple);
+        }
+        
+        /* Color palette demonstration section */
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .color-sample {
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            position: relative;
+        }
+        
+        .color-sample.light-text {
+            color: var(--dark-grey);
+        }
+        
+        .color-name {
+            margin-bottom: 5px;
+        }
+        
+        .color-hex {
+            font-size: 0.8rem;
         }
         
         @media (max-width: 768px) {
@@ -95,6 +153,10 @@
             
             h1 {
                 font-size: 1.8rem;
+            }
+            
+            .color-sample {
+                width: calc(50% - 20px);
             }
         }
     </style>
